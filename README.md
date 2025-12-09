@@ -37,7 +37,12 @@ python -m ipykernel install --user --name gpu_env --display-name "gpu_env test"
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
 
-## 5. git 레포짓 다운로드하기
+## 5. CUDA 11.2 + cuDNN 8.1 설치 (conda)
+```
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
+```
+
+## 6. git 레포짓 다운로드하기
 ```
 git clone https://github.com/sano820/windows-gpu.git
 # 또는 zip파일로 다운로드하기
@@ -53,7 +58,7 @@ ls   # cmd, git bash 환경
 cd 새싹/windows-gpu
 ```
 
-## 6. GPU 사용 가능한지 확인
+## 7. GPU 사용 가능한지 확인
 아래 이미지들 처럼 결과가 나오면 성공!  
 ```
 python check_gpu.py
@@ -61,11 +66,11 @@ python check_gpu.py
 ![alt text](docs/image.png)  
 ![alt text](docs/image-1.png)  
 
-## 7. 실습을 위한 라이브러리 설치
+## 8. 실습을 위한 라이브러리 설치
 ```
 pip install -r requirements.txt
 ```
 
-## 8. ipynb 실습 파일 실행
+## 9. ipynb 실습 파일 실행
 gpu_env test 이름으로 되어있는 커널 선택!  
 그러면 gpu를 사용한 cnn 모델 학습 끝!  
