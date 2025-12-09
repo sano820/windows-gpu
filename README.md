@@ -40,6 +40,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ## 5. git 레포짓 다운로드하기
 ```
 git clone https://github.com/sano820/windows-gpu.git
+# 또는 zip파일로 다운로드하기기
 ```
 그 후 터미널을 해당 폴더까지 이동 시키기  
 ```
@@ -66,4 +67,5 @@ pip install -r requirements.txt
 ```
 
 ## 8. ipynb 실습 파일 실행
+gpu_env test 이름으로 되어있는 커널 선택!  
 그러면 gpu를 사용한 cnn 모델 학습 끝!  
