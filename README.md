@@ -40,7 +40,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ## 5. git 레포짓 다운로드하기
 ```
 git clone https://github.com/sano820/windows-gpu.git
-# 또는 zip파일로 다운로드하기기
+# 또는 zip파일로 다운로드하기
 ```
 그 후 터미널을 해당 폴더까지 이동 시키기  
 ```
