@@ -14,7 +14,7 @@ PyTorch 및 TensorFlow/Keras 기반 딥러닝 실습을 진행하기 위한 GPU 
   - [Visual Studio Code](https://code.visualstudio.com/)
 
 
-## 2. 가상환경 생성 (예: ai_env)
+## 2. 가상환경 생성
 anaconda prompt에서 실행
 
 ```
