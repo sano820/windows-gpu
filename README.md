@@ -60,10 +60,10 @@ python check_gpu.py
 ![alt text](docs/image.png)  
 ![alt text](docs/image-1.png)  
 
-## 6. 실습을 위한 라이브러리 설치
+## 7. 실습을 위한 라이브러리 설치
 ```
 pip install -r requirements.txt
 ```
 
-## 7. 실습 파일 실행
+## 8. ipynb 실습 파일 실행
 그러면 gpu를 사용한 cnn 모델 학습 끝!  
