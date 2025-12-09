@@ -1,8 +1,8 @@
-numpy
+numpy==1.26.4
 pandas
 matplotlib
 scikit-learn
-opencv-python
+opencv-python==4.9.0.80
 
 tensorflow<2.11
 keras<3
