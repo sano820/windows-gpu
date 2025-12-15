@@ -13,6 +13,11 @@ PyTorch 및 TensorFlow/Keras 기반 딥러닝 실습을 진행하기 위한 GPU 
   - [Anaconda](https://www.anaconda.com/) 또는 [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
   - [Visual Studio Code](https://code.visualstudio.com/)
 
+- gpu 설정
+  ```
+  nvidia-smi
+  ```
+
 
 ## 2. 가상환경 생성
 anaconda prompt에서 실행
