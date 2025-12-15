@@ -14,35 +14,7 @@ PyTorch 및 TensorFlow/Keras 기반 딥러닝 실습을 진행하기 위한 GPU 
   - [Visual Studio Code](https://code.visualstudio.com/)
 
 
-## 2. 가상환경 생성
-anaconda prompt에서 실행
-
-```
-conda create -n gpu_env python=3.10 -y
-conda activate gpu_env
-```
-
-## 3. 실습을 위한 주피터 노트북 커널
-```
-# (gpu_env 활성화 상태)
-pip install jupyter ipykernel
-
-python -m ipykernel install --user --name gpu_env --display-name "gpu_env test"
-```
-
-
-## 4. PyTorch + CUDA 12.4 설치
-가상환경 내 설치
-```
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
-```
-
-## 5. CUDA 11.2 + cuDNN 8.1 설치 (conda)
-```
-conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
-```
-
-## 6. git 레포짓 다운로드하기
+## 2. git 레포짓 다운로드하기
 ```
 git clone https://github.com/sano820/windows-gpu.git
 # 또는 zip파일로 다운로드하기
@@ -58,7 +30,30 @@ ls   # cmd, git bash 환경
 cd 새싹/windows-gpu
 ```
 
-## 7. GPU 사용 가능한지 확인
+## 3. 가상환경 생성
+anaconda prompt에서 실행
+
+```
+conda create -n gpu_env python=3.10 -y
+conda activate gpu_env
+```
+
+## 4. 실습을 위한 주피터 노트북 커널
+```
+# (gpu_env 활성화 상태)
+pip install jupyter ipykernel
+
+python -m ipykernel install --user --name gpu_env --display-name "gpu_env test"
+```
+
+## 5. tensorflow + CUDA 11.2 + cuDNN 8.1 설치 (conda)
+```
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
+
+python -m pip install "tensorflow<2.11"
+```
+
+## 6. GPU 사용 가능한지 확인
 아래 이미지들 처럼 결과가 나오면 성공!  
 ```
 python check_gpu.py
@@ -66,11 +61,18 @@ python check_gpu.py
 ![alt text](docs/image.png)  
 ![alt text](docs/image-1.png)  
 
-## 8. 실습을 위한 라이브러리 설치
+## 7. 실습을 위한 라이브러리 설치
 ```
 pip install -r requirements.txt
 ```
 
-## 9. ipynb 실습 파일 실행
+## 8. ipynb 실습 파일 실행
 gpu_env test 이름으로 되어있는 커널 선택!  
 그러면 gpu를 사용한 cnn 모델 학습 끝!  
+
+
+## 추후 내용 PyTorch + CUDA 설치
+가상환경 내 설치
+```
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+```
